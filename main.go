@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/mjibson/esc/embed"
+	"github.com/bunin/esc/embed"
 )
 
 func main() {
