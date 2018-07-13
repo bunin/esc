@@ -309,11 +309,7 @@ type _escFile struct {
 }
 
 func (_escLocalFS) Open(name string) (http.File, error) {
-	f, present := _escData[path.Clean(name)]
-	if !present {
-		return nil, os.ErrNotExist
-	}
-	return os.Open(f.local)
+	return os.Open(name)
 }
 
 func (_escStaticFS) prepare(name string) (*_escFile, error) {
