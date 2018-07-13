@@ -32,6 +32,8 @@ The flags are:
 	unexport functions by prefixing them with esc, e.g. FS -> escFS
 -no-compress
 	do not compress files
+-build-tags
+	build tags to add to generated files
 ```
 
 ## Accessing Embedded Files
